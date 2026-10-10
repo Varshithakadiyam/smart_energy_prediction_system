@@ -4,7 +4,7 @@
  * Connects to FastAPI backend via configurable VITE_API_URL environment variable.
  */
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const API_BASE = import.meta.env.VITE_API_URL || 'https://smart-energy-backend-0ao0.onrender.com';
 
 async function fetchJson(endpoint, options = {}) {
   const url = `${API_BASE}${endpoint}`;
